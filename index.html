@@ -39,29 +39,62 @@
         animation: grain-b 0.7s steps(1) infinite;
       }
       @keyframes grain-a {
-        0% { transform: translate(0, 0); }
-        12% { transform: translate(-7%, 4%); }
-        25% { transform: translate(5%, -9%); }
-        37% { transform: translate(-12%, -3%); }
-        50% { transform: translate(9%, 8%); }
-        62% { transform: translate(-4%, 11%); }
-        75% { transform: translate(13%, -6%); }
-        87% { transform: translate(-9%, 2%); }
+        0% {
+          transform: translate(0, 0);
+        }
+        12% {
+          transform: translate(-7%, 4%);
+        }
+        25% {
+          transform: translate(5%, -9%);
+        }
+        37% {
+          transform: translate(-12%, -3%);
+        }
+        50% {
+          transform: translate(9%, 8%);
+        }
+        62% {
+          transform: translate(-4%, 11%);
+        }
+        75% {
+          transform: translate(13%, -6%);
+        }
+        87% {
+          transform: translate(-9%, 2%);
+        }
       }
       @keyframes grain-b {
-        0% { transform: translate(4%, -5%); }
-        16% { transform: translate(-10%, 7%); }
-        33% { transform: translate(8%, 12%); }
-        50% { transform: translate(-6%, -11%); }
-        66% { transform: translate(11%, -2%); }
-        83% { transform: translate(-13%, 5%); }
+        0% {
+          transform: translate(4%, -5%);
+        }
+        16% {
+          transform: translate(-10%, 7%);
+        }
+        33% {
+          transform: translate(8%, 12%);
+        }
+        50% {
+          transform: translate(-6%, -11%);
+        }
+        66% {
+          transform: translate(11%, -2%);
+        }
+        83% {
+          transform: translate(-13%, 5%);
+        }
       }
       @media (prefers-reduced-motion: reduce) {
-        body::before, body::after { animation: none; }
+        body::before,
+        body::after {
+          animation: none;
+        }
       }
       a {
-      border-bottom: 1px solid #000;
-        transition: background-color 0.2s ease, color 0.2s ease;
+        border-bottom: 1px solid #000;
+        transition:
+          background-color 0.2s ease,
+          color 0.2s ease;
       }
       a:hover {
         background-color: #000;
@@ -69,31 +102,43 @@
       }
     </style>
   </head>
-  <body
-    class="bg-[#f5f3ee] text-black min-h-screen"
-  >
+  <body class="bg-[#f5f3ee] text-black min-h-screen">
+    <div class="w-1/2 flex flex-col mx-auto p-4">
+      <h1 class="text-xl">Johnny Richardson</h1>
+      <p class="mt-4">
+        I am a full-stack engineer working in the public interest. I have 18
+        years of professional experience and have been tinkering with code for
+        much, much longer. From 2015-2024, I was the Lead Developer at the
+        Engagement Lab. Prior to that, I survived and exfiltrated from a couple
+        gaming startups, with a brief intermission at a major marketing firm.
+      </p>
 
-    <div class="w-1/2 flex flex-col mx-auto p-4"> 
-    <h1 class="text-xl">Johnny Richardson</h1>
-    <p class="mt-4">
-      I am a full-stack engineer working in the public interest. I have 18 years
-      of professional experience and have been tinkering with code for much,
-      much longer. From 2015-2024, I was the Lead Developer at the Engagement
-      Lab. Prior to that, I survived and exfiltrated from a couple gaming
-      startups, with a brief intermission at a major marketing firm.
-    </p>
+      <p class="mt-4">
+        Most of my recent work centers around using the web to help solve
+        problems in democracy and governance, global health, media literacy, and
+        equity and accessibility. I work at the
+        <a href="https://cyber.harvard.edu/"
+          >Berkman Klein Center for Internet and Society</a
+        >
+        at Harvard University, where I am helping build
+        <a href="https://frankly.org/">Frankly</a>, and previously
+        <a href="https://asml.cyber.harvard.edu/nextspace/">NextSpace</a> and
+        briefly
+        <a href="https://hub.transparency.berkmancenter.org/"
+          >Transparency Hub</a
+        >.
+      </p>
 
-    <p class="mt-4">
-      Most of my recent work centers around using the web to help solve problems
-      in democracy and governance, global health, media literacy, and equity and
-      accessibility. I work at the <a href="https://cyber.harvard.edu/">Berkman Klein Center for Internet and Society</a> at Harvard University, where I am helping build <a href="https://frankly.org/">Frankly</a>, and previously <a href="https://asml.cyber.harvard.edu/nextspace/">NextSpace</a> and briefly <a href="https://hub.transparency.berkmancenter.org/">Transparency Hub</a>.
-    </p>
+      <p class="mt-4">
+        I live near Boston with my wife, son, and dog. When I'm not working, you
+        might find me playing video games, cooking, homebrewing beer, and fixing
+        up our fixer-upper.
+      </p>
 
-    <p class="mt-4">
-      I live near Boston with my wife, son, and dog. When I'm not working, you
-      might find me playing video games, cooking, homebrewing beer, and fixing
-      up our fixer-upper.
-    </p>
+      <p class="mt-4">
+        <a href="https://github.com/johnnycrich">GitHub</a> |
+        <a href="https://linkedin.com/in/jrichardson">LinkedIn</a>
+      </p>
     </div>
   </body>
 </html>
